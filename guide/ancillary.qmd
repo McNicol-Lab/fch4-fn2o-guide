@@ -1,0 +1,117 @@
+---
+title: "Ancillary variables"
+subtitle: "What to measure alongside CH₄ and N₂O fluxes"
+toc: true
+---
+
+## Getting started
+
+Fluxes rarely explain themselves. CH₄ production, oxidation, and transport, and N₂O production and consumption, depend on water, oxygen (or redox state), temperature, substrate, vegetation, and, very often, human management. Ancillary measurements are also the predictors you will need for [gap-filling](half-hourly.qmd#gap-filling) and for comparing sites.
+
+::: {.icos-box}
+This page is a getting-started priority list distilled from committee discussions, including a working inventory of variables. It is **not** a mandatory protocol and not a substitute for ICOS or FLUXNET BADM metadata requirements. If you submit to a network, follow that network's variable list (for ICOS, see the [CH₄/N₂O instruction](https://www.europe-fluxdata.eu/icos/documents/instructions/eddych4n2o) and the ICOS instructions for meteorological measurements, [doi:10.18160/NHEG-4KWW](https://doi.org/10.18160/NHEG-4KWW)). If you are just starting, measure the high-priority, feasible items for your ecosystem first.
+:::
+
+The working inventory uses four priority levels:
+
+1. Important and usually feasible
+2. Important, but sometimes difficult
+3. Useful wishlist, usually feasible
+4. Useful wishlist, difficult
+
+Items below are priority 1 unless marked otherwise.
+
+## CH₄: a strong starting set
+
+### Meteorology and footprint
+
+- Wind speed and wind direction (needed for the flux itself and to interpret the footprint)
+- Air pressure (influences gas release from soils)
+- Precipitation (related to wetness and water-table dynamics)
+
+### Soil and water
+
+- Soil temperature at several depths, and in the main landscape types inside the footprint
+- Soil moisture, ideally as a profile and in more than one patch type (TDR or similar)
+- Redox state, or another redox index *(priority 2: important, often harder)*
+- Water-table elevation above or below the ground surface *(priority 2; manual wells or a calibrated pressure transducer)*
+- Water or profile temperature
+- Dissolved oxygen in soil or porewater, where it can be measured
+
+### Vegetation and carbon inputs
+
+- Ecosystem type
+- Vegetation density, especially plants with aerenchyma *(priority 2)*. Aerenchymatous plants can vent CH₄ past oxidizing layers; some mosses and floating plants can instead favor oxidation.
+- Plant growth forms (rooting depth, height, LAI)
+- Cover of plants, open soil, and open water, including patchiness and the length of plant–water edges (aerial imagery or classification helps)
+- Gross primary production and the CO₂ flux, which help describe carbon supply to methanogens
+
+### More static site descriptors
+
+Often priority 3, but still worth collecting:
+
+- Soil texture
+- Soil carbon and nitrogen content
+
+## CH₄: extras that depend on the ecosystem
+
+**Marshes and tidal systems**
+
+- Salinity (often essential where sulfate reduction competes with methanogenesis)
+- Tides and water-height variation; lateral carbon transport can be a large term
+
+**Peatlands**
+
+- Drainage and rewetting
+- How much of the surface is ponded or affected by drainage (moisture topography)
+
+**Agricultural footprints**
+
+- Manure type and amount, and how it is stored
+- Animal density and location in the footprint (enteric CH₄ as well as manure)
+- Animal diet, where it is known
+
+## N₂O: a strong starting set
+
+N₂O work is especially common in agriculture, but low-nutrient and peatland sites matter too.
+
+### Environment
+
+- Air temperature, soil temperature, and soil moisture
+- Precipitation (often the trigger for emission pulses)
+- Albedo and snow cover or snow depth, when freeze–thaw emissions are possible
+
+### Soil nitrogen and physical properties
+
+- Soil nitrate (for example, KCl extracts) and ammonium
+- Soil type and organic-matter content, C:N ratio, bulk density, and texture
+
+### Management
+
+Write these down even if you cannot measure them with sensors at high frequency.
+
+- Fertilizer type and formulation, including inhibitors (product names can hide formula changes)
+- Total nitrogen applied, and total ammoniacal nitrogen if the source is manure
+- Fertilization date, and the gap between fertilization and the next wetting event
+- Planting date, crop or plant type (including legumes), tillage, and application method
+- Irrigation timing
+- Harvest yields and plant nitrogen content, which help close an agronomic nitrogen budget
+
+### Other settings
+
+- In low-nutrient (oligotrophic) systems, regional ammonia concentrations or nitrogen deposition can matter even without fertilizer
+- Peatland drainage and land-use history
+- Dissolved oxygen in soil
+
+## How to use this list
+
+- [ ] **Start with what you can sustain.** A water-table record and a soil temperature and moisture profile will help almost any CH₄ site; fertilizer timing and soil moisture will help almost any agricultural N₂O site.
+- [ ] **Match spatial sampling to the flux footprint.** One point sensor in a heterogeneous marsh can mislead you.
+- [ ] **Keep management as metadata,** even when it is not a continuous sensor stream.
+- [ ] **Look at metadata templates early.** If your goals include carbon accounting or comparison with other FLUXNET sites, review the network's BADM / metadata templates early so you do not have to reconstruct a season after the fact.
+
+## What comes next
+
+The ancillary-variables group has discussed a future white paper aimed at people entering CH₄ and N₂O eddy covariance. It would focus on terrestrial systems (agriculture, forests, tropics, peatlands, and other wet soils) and on the possible use of satellite products alongside tower data. Accompanying CO₂ fluxes are also useful for modeling. Until that paper exists, treat this page as a concise starting list rather than a final standard.
+
+**Back to:** [Guide overview](index.qmd)

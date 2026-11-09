@@ -1,0 +1,55 @@
+---
+title: "Guide overview"
+subtitle: "From a new CH₄ or N₂O analyzer to an annual budget"
+toc: true
+---
+
+::: {.icos-box}
+**This guide complements ICOS; it does not replace it.** For installation geometry, approved sensors, maintenance, calibration, and ICOS file submission, use the official documents:
+
+- [ICOS instructions for CH₄ and N₂O turbulent fluxes](https://www.europe-fluxdata.eu/icos/documents/instructions/eddych4n2o) — Nicolini et al. (2024), [doi:10.18160/61J9-4MMK](https://doi.org/10.18160/61J9-4MMK)
+- Nemitz et al. (2018), *International Agrophysics*, [doi:10.1515/intag-2017-0042](https://doi.org/10.1515/intag-2017-0042)
+- Mammarella et al. (2020), RINGO Deliverable D3.5 ([ICOS RINGO deliverables](https://www.icos-cp.eu/impact/projects/ringo/deliverables))
+:::
+
+## The typical path
+
+A typical path from a new CH₄ or N₂O analyzer to an annual budget looks like this:
+
+1. **Plan the site and system.** Choose a site and an instrument setup appropriate to the flux size you expect, and follow your network's hardware rules (for ICOS stations, that means the ICOS instruction).
+2. **Collect high-frequency data.** Record synchronized wind and gas data, commonly at 10 Hz.
+3. **Compute fluxes.** Calculate 30-minute (or 60-minute) fluxes, taking particular care with time lag, despiking, and spectral corrections.
+4. **Quality-control the half-hourly fluxes.** Do not blindly reuse every default that was tuned for CO₂.
+5. **Decide on u\*.** Decide, transparently, what you will do about low-turbulence (low u\*) periods. This is still an active discussion for CH₄ and N₂O.
+6. **Gap-fill.** Fill gaps in the series. Here that means imputing missing values in one site's time series, not spatial upscaling.
+7. **Report uncertainty and collect ancillary data.** Estimate and report uncertainty, and collect the ancillary measurements you will need to interpret and gap-fill the fluxes.
+
+## Where each step lives in this guide
+
+::: {.card-grid}
+::: {.area-card}
+#### [High-frequency data collection and processing](high-frequency.qmd)
+Steps 1–3. Instruments, time lag, wavelets, despiking, spectral corrections, and software.
+:::
+::: {.area-card}
+#### [Half-hourly processing](half-hourly.qmd)
+Steps 4–7. QC/QA, outliers and pulses, u\*, gap-filling, and uncertainty.
+:::
+::: {.area-card}
+#### [Ancillary variables](ancillary.qmd)
+Step 7 and beyond. What to measure alongside the fluxes, for CH₄ and for N₂O.
+:::
+:::
+
+## Why CH₄ and N₂O need extra care
+
+Compared with CO₂, CH₄ and N₂O fluxes are often smaller relative to instrument noise and more episodic. The same building blocks apply, but the emphasis shifts:
+
+- **Low signal-to-noise** makes time-lag detection and the limit of detection more important.
+- **Bursts and pulses** (CH₄ ebullition, N₂O after fertilizer and rain) can be mistaken for spikes or non-stationarity and filtered out.
+- **u\* filtering and uncertainty** do not yet have community-standard answers for these gases.
+- **Drivers differ.** Water, redox, substrate, vegetation, and management often matter more than light and temperature alone, which shapes both interpretation and gap-filling.
+
+## How to use this guide
+
+Read the pages in order if you are planning a new system, or jump to the page for the step you are working on. Each page ends with a short checklist or a list of open questions. Wherever this guide is brief, follow the links to ICOS and the literature for the full detail.

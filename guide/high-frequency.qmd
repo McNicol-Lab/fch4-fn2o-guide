@@ -1,0 +1,59 @@
+---
+title: "High-frequency data collection and processing"
+subtitle: "From the analyzer and sonic anemometer to 30-minute fluxes"
+toc: true
+---
+
+## Getting started
+
+High-frequency processing is everything that turns raw sonic-anemometer and gas-analyzer records into a 30-minute flux. The building blocks you may know from CO₂ still apply: coordinate rotation, time-lag correction, detrending or high-pass filtering, air-density (WPL) terms where needed, spectral corrections, and quality flags. CH₄ and N₂O change the emphasis because the signal is often weaker and more intermittent.
+
+::: {.icos-box}
+For the full system-setup specification (sensors, inlet geometry, calibration, maintenance), see the [ICOS CH₄/N₂O instruction](https://www.europe-fluxdata.eu/icos/documents/instructions/eddych4n2o) and [Nemitz et al. (2018)](https://doi.org/10.1515/intag-2017-0042). Raw-data processing for CO₂ and energy fluxes is covered in Sabbatini et al. (2018), [doi:10.1515/intag-2017-0043](https://doi.org/10.1515/intag-2017-0043). This page covers the issues that most often surprise people new to non-CO₂ fluxes.
+:::
+
+## Instruments and setup
+
+These are complementary notes, not a sensor list.
+
+- **Closed-path laser spectrometers** are widely used for both CH₄ and N₂O. Pay attention to tube length, flow rate, and how you will find the time lag relative to the sonic anemometer.
+- **Open-path CH₄ analyzers** (including the LI-COR LI-7700) involve a well-known trade-off: open-path systems need larger air-density corrections, while closed-path systems can lose high-frequency signal in the tube under some conditions. See Detto et al. (2011), *Agricultural and Forest Meteorology*, [doi:10.1016/j.agrformet.2011.05.014](https://doi.org/10.1016/j.agrformet.2011.05.014).
+- **Network rules come first.** As a matter of ICOS network policy, ICOS no longer accepts the LI-7700 at ICOS Class 1 ecosystem stations. If you are part of ICOS, follow ICOS. If you are not, treat instrument choice as a scientific and practical decision, follow your own network's rules, and document your reasoning. This site does not ban any commercial sensor.
+- **Record what you will need later:** gas mole fractions, the three wind components, sonic temperature, and the diagnostics your analyzer provides (signal strength, flow, cell or mirror status, and so on).
+
+## Time lag
+
+For closed-path systems, detecting the time delay between the sonic anemometer and the analyzer is one of the most important high-frequency steps, especially when fluxes are small. When the signal-to-noise ratio is low, a lag search over a wide window tends to lock onto noise and can bias fluxes. Langford et al. (2015), *Atmospheric Measurement Techniques*, [doi:10.5194/amt-8-4197-2015](https://doi.org/10.5194/amt-8-4197-2015), is a good introduction to time-lag determination and detection limits for low signal-to-noise eddy-covariance data.
+
+Points emphasized in committee discussions:
+
+- Detect time lags carefully for closed-path laser spectrometers.
+- Use a **predetermined, relatively narrow lag-search window** together with a **default (nominal) lag**, rather than letting the search wander over a wide window at every interval.
+- **High-pass filtered lag correction**, as implemented in [eddy4R](https://github.com/NEONScience/eddy4R), is one documented approach.
+
+## Wavelets and data retention
+
+Conventional stationarity and turbulence flags can remove a large fraction of CH₄ or N₂O records at sites where fluxes arrive in short events. Wavelet-based methods are being used in this community to retain more high-quality data and to identify disruptive events, without treating every non-stationary period as unusable. Think of wavelets as a promising and actively used approach, not a required standard.
+
+## Despiking, spectral corrections, and quality flags
+
+- **Despiking.** Remove physically impossible spikes in the raw data before averaging, but be careful not to treat real emission pulses (ebullition, fertilizer bursts) as noise.
+- **Spectral corrections.** These can become large when tubes, filters, or analyzers attenuate high frequencies. Intervals with extreme correction factors are often filtered later, at the [half-hourly stage](half-hourly.qmd).
+- **Quality flags.** Standard flux quality flags, such as the Mauder and Foken (2004) scheme based on steady-state and integral-turbulence-characteristics (SSITC) tests, are still commonly applied. Many groups keep quality classes 0 and 1 for quantitative work.
+
+## Software people use at this stage
+
+[EddyPro](https://www.licor.com/products/eddy-covariance/software) (LI-COR; the [processing engine is open source](https://github.com/LI-COR-Environmental/eddypro-engine)) is the processing software most widely used in this community to compute 30-minute fluxes from raw files. Other groups use in-house MATLAB, R, or Python code, or research pipelines such as [eddy4R](https://github.com/NEONScience/eddy4R).
+
+Whatever you choose, **write down your settings**: the lag window and nominal lag, the despiking method, the spectral corrections, and whether a default CO₂-style outlier filter was left on.
+
+## A short high-frequency checklist
+
+- [ ] Confirm clock synchronization between the sonic anemometer and the gas analyzer (see ICOS for recommended practice).
+- [ ] For closed-path systems, document the inlet position relative to the sonic anemometer, the tube length, and the flow rate.
+- [ ] Set a physically plausible lag-search window and a nominal lag.
+- [ ] Inspect lag detections on days with clear fluxes *and* on days with near-zero fluxes.
+- [ ] Review raw-data diagnostics (signal strength, flow, analyzer warnings) before you trust a long automated run.
+- [ ] Record software versions and processing settings so the 30-minute product is reproducible.
+
+**Next:** [Half-hourly processing →](half-hourly.qmd)

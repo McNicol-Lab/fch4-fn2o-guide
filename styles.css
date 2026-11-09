@@ -1,0 +1,191 @@
+/* Brand palette shared with the ecoϕlab site */
+:root {
+  --brand-dark: #0c2220;   /* deep green */
+  --brand-gold: #c08a34;   /* golden ochre */
+  --brand-cream: #f4eed8;  /* soft cream */
+  --bs-primary: #0c2220;
+  --bs-secondary: #c08a34;
+  --bs-link-color: #8a5f1c;
+  --bs-link-hover-color: #0c2220;
+}
+
+body {
+  font-family: "Calibri", "Segoe UI", system-ui, -apple-system, sans-serif;
+  color: #1d2b2a;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6, .title {
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+  color: var(--brand-dark);
+}
+
+h2 {
+  border-bottom: 2px solid var(--brand-cream);
+  padding-bottom: 0.25rem;
+  margin-top: 2rem;
+}
+
+a { color: #8a5f1c; }
+a:hover { color: var(--brand-dark); }
+
+/* Navbar */
+.navbar {
+  background-color: var(--brand-dark) !important;
+}
+.navbar .navbar-brand,
+.navbar .nav-link,
+.navbar .navbar-title,
+.navbar .navbar-text,
+.navbar .bi {
+  color: var(--brand-cream) !important;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: var(--brand-gold) !important;
+}
+.navbar .dropdown-menu {
+  border-top: 3px solid var(--brand-gold);
+}
+.navbar .dropdown-item.active,
+.navbar .dropdown-item:active {
+  background-color: var(--brand-dark);
+  color: var(--brand-cream);
+}
+
+/* Footer */
+.nav-footer {
+  background-color: var(--brand-cream);
+  color: var(--brand-dark);
+  border-top: 3px solid var(--brand-gold);
+  font-size: 0.9rem;
+}
+.nav-footer a { color: var(--brand-dark); text-decoration: underline; }
+
+/* Hero banner on the home page */
+.hero {
+  background: linear-gradient(135deg, var(--brand-dark) 0%, #1b3b37 100%);
+  color: var(--brand-cream);
+  border-radius: 0.5rem;
+  padding: 1.75rem 1.75rem 1.25rem;
+  margin: 0 0 1.75rem;
+  border-left: 6px solid var(--brand-gold);
+}
+.hero p { font-size: 1.1rem; margin-bottom: 0.6rem; }
+.hero a { color: var(--brand-gold); }
+
+/* "Start with ICOS" callout */
+.icos-box {
+  background-color: var(--brand-cream);
+  border-left: 5px solid var(--brand-gold);
+  border-radius: 0 0.4rem 0.4rem 0;
+  padding: 1rem 1.25rem;
+  margin: 1.25rem 0 1.75rem;
+}
+.icos-box p:last-child, .icos-box ul:last-child { margin-bottom: 0; }
+
+/* Card grid for guide areas */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 1.5rem;
+}
+.area-card {
+  background: #fff;
+  border: 1px solid #e3dcc2;
+  border-top: 4px solid var(--brand-gold);
+  border-radius: 0.4rem;
+  padding: 1rem 1.1rem;
+}
+.area-card h4 { margin-top: 0; font-size: 1.1rem; }
+.area-card p { margin-bottom: 0.4rem; font-size: 0.95rem; }
+
+/* Open-question callout */
+.open-q {
+  background-color: rgba(192, 138, 52, 0.10);
+  border: 1px dashed var(--brand-gold);
+  border-radius: 0.4rem;
+  padding: 0.9rem 1.15rem;
+  margin: 1.25rem 0;
+}
+.open-q strong:first-child { color: #7a521a; }
+
+/* Checklists rendered from task lists */
+ul.task-list li, .task-list li { margin-bottom: 0.3rem; }
+
+/* Timeline */
+.timeline {
+  border-left: 3px solid var(--brand-gold);
+  margin: 1rem 0 1.5rem 0.5rem;
+  padding-left: 1.25rem;
+}
+.timeline .tl-item { position: relative; margin-bottom: 1.1rem; }
+.timeline .tl-item::before {
+  content: "";
+  position: absolute;
+  left: -1.72rem;
+  top: 0.35rem;
+  width: 0.85rem;
+  height: 0.85rem;
+  border-radius: 50%;
+  background: var(--brand-dark);
+  border: 2px solid var(--brand-cream);
+}
+.timeline .tl-date {
+  font-weight: 700;
+  color: var(--brand-dark);
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+/* Stats on the Network page */
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+.stat {
+  background: var(--brand-cream);
+  border-radius: 0.4rem;
+  padding: 0.8rem 1rem;
+  text-align: center;
+}
+.stat .num {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--brand-dark);
+  font-family: "Trebuchet MS", sans-serif;
+}
+.stat .lbl { font-size: 0.9rem; }
+
+/* Opt-in form */
+.optin-form {
+  background: #fff;
+  border: 1px solid #e3dcc2;
+  border-top: 4px solid var(--brand-dark);
+  border-radius: 0.4rem;
+  padding: 1.25rem;
+  max-width: 36rem;
+  margin: 1rem 0 1.5rem;
+}
+.optin-form label { font-weight: 600; }
+.optin-form .btn-primary {
+  background-color: var(--brand-dark);
+  border-color: var(--brand-dark);
+}
+.optin-form .btn-primary:hover { background-color: #1b3b37; }
+.optin-form .btn-gold {
+  background-color: var(--brand-gold);
+  border-color: var(--brand-gold);
+  color: #fff;
+}
+#optin-message { margin-top: 1rem; }
+#optin-message:empty { display: none; }
+.optin-msg { border-radius: 0.35rem; padding: 0.8rem 1rem; }
+.optin-msg.ok   { background: #e6f0ea; border-left: 4px solid #2f6b4f; }
+.optin-msg.info { background: var(--brand-cream); border-left: 4px solid var(--brand-gold); }
+.optin-msg.no   { background: #f5f1ea; border-left: 4px solid #8a7d66; }
+.name-list { columns: 2; }
+.small-note { font-size: 0.9rem; color: #4a5856; }

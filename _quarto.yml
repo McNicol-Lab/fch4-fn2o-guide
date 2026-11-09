@@ -1,0 +1,58 @@
+project:
+  type: website
+  output-dir: _site
+  resources:
+    - data/**
+    - js/**
+  render:
+    - index.qmd
+    - network.qmd
+    - work.qmd
+    - guide/index.qmd
+    - guide/high-frequency.qmd
+    - guide/half-hourly.qmd
+    - guide/ancillary.qmd
+
+website:
+  title: "Getting started with FCH₄ and FN₂O"
+  description: "A short guide for adding methane and nitrous oxide to eddy-covariance workflows"
+  site-url: "https://mcnicol-lab.github.io/fch4-fn2o-guide/"
+  repo-url: "https://github.com/McNicol-Lab/fch4-fn2o-guide"
+  page-navigation: true
+  navbar:
+    left:
+      - text: Overview
+        href: index.qmd
+      - text: Network
+        href: network.qmd
+      - text: Work
+        href: work.qmd
+      - text: Guide
+        menu:
+          - text: Guide overview
+            href: guide/index.qmd
+          - text: High-frequency data collection and processing
+            href: guide/high-frequency.qmd
+          - text: Half-hourly processing (gap-filling and uncertainty)
+            href: guide/half-hourly.qmd
+          - text: Ancillary variables
+            href: guide/ancillary.qmd
+    right:
+      - icon: github
+        href: https://github.com/McNicol-Lab/fch4-fn2o-guide
+        aria-label: Source on GitHub
+  page-footer:
+    left: |
+      Hosted by [ecoϕlab](https://mcnicol-lab.github.io/ecophilab/) (McNicol Lab, University of Illinois Chicago).
+    right: |
+      Complementary to the [ICOS Ecosystem Instructions for turbulent CH₄ and N₂O fluxes](https://www.europe-fluxdata.eu/icos/documents/instructions/eddych4n2o).
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    toc-location: right
+    toc-title: "On this page"
+    link-external-newwindow: true
+    smooth-scroll: true

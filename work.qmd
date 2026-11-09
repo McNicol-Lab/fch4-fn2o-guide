@@ -1,0 +1,80 @@
+---
+title: "Work"
+subtitle: "What the committee has done so far, and where it is heading"
+toc: true
+---
+
+The committee has been working since 2024 to turn scattered CH₄ and N₂O processing practice into shared guidance, open tools, and, over time, updates to community datasets such as [FLUXNET-CH₄](https://fluxnet.org/data/fluxnet-ch4-community-product/).
+
+## Three work areas
+
+The work is organized into three structured areas, each with its own page in the [guide](guide/index.qmd):
+
+- **[High-frequency preprocessing](guide/high-frequency.qmd)** of raw eddy-covariance data, including time-lag handling and methods that can retain more high-quality records.
+- **[Half-hourly post-processing](guide/half-hourly.qmd):** quality control of 30-minute fluxes, the still-open question of u\* filtering for CH₄ and N₂O, gap-filling, and uncertainty.
+- **[Ancillary variables](guide/ancillary.qmd),** launched after a full-committee discussion in September 2024, to identify which extra measurements most help people interpret and gap-fill non-CO₂ fluxes.
+
+A longer-term goal is alignment with [ONEFlux](https://github.com/fluxnet/ONEFlux), the community processing pipeline used for FLUXNET carbon and energy products. For FLUXNET-CH₄ version 2.0, the group has committed to machine-learning approaches to gap-filling.
+
+## Timeline
+
+::: {.timeline}
+::: {.tl-item}
+[April 2024]{.tl-date}<br>
+Committee work is underway, and the [four objectives](index.qmd#four-objectives) are in place.
+:::
+::: {.tl-item}
+[September 2024]{.tl-date}<br>
+A full-committee discussion launches the ancillary-variables work area.
+:::
+::: {.tl-item}
+[21–23 October 2024]{.tl-date}<br>
+FLUXNET-CH₄ v2.0 Data Processing Workshop in Berkeley, held as a hybrid meeting with more than 100 participants.
+:::
+::: {.tl-item}
+[2024–2025]{.tl-date}<br>
+Groups share high-frequency processing approaches, including wavelet methods and time-lag correction, and work on machine-learning gap-filling pipelines.
+:::
+::: {.tl-item}
+[July 2025]{.tl-date}<br>
+Updates presented at the FLUXNET Workshop in Brisbane.
+:::
+::: {.tl-item}
+[November 2025]{.tl-date}<br>
+Status update in the FLUXNET Community Council newsletter.
+:::
+::: {.tl-item}
+[2026]{.tl-date}<br>
+A Volkswagen Foundation workshop in Hannover on advancing data processing, including scoping toward a community position paper.
+:::
+::: {.tl-item}
+[April 2026]{.tl-date}<br>
+Status: continue finalizing best-practice guidance, synthesize ancillary-variable recommendations, support new sites, and connect this work to the broader FLUXNET Data System Initiative (whose public data-system release was noted as December 2025).
+:::
+:::
+
+## Workshops
+
+- **FLUXNET-CH₄ v2.0 Data Processing Workshop**, Berkeley, 21–23 October 2024 (hybrid; more than 100 participants).
+- **FLUXNET Workshop**, Brisbane, 2025.
+- **Volkswagen Foundation workshop on advancing data processing**, Hannover, 2026.
+
+## Scientific progress
+
+Progress so far is real but still developing. In brief:
+
+- **High-frequency preprocessing.** Wavelet approaches can retain records that conventional stationarity or turbulence flags would otherwise discard. There has also been work on time-lag detection for closed-path laser analyzers, including high-pass filtered lag correction as implemented in tools such as [eddy4R](https://github.com/NEONScience/eddy4R).
+- **Machine-learning gap-filling.** Pipelines are being integrated for community use. Results were still preliminary at the time of the 2026 summary, so no performance numbers are reported here.
+- **Low and negative fluxes.** An active discussion addresses how to handle small and negative fluxes, which matter for upland sites and for the upland–wetland continuum, not only for large wetland sources.
+
+## Open challenges
+
+The committee has been candid about what is hard:
+
+- Coordinating a global volunteer group across many time zones.
+- Balancing new methods against the need for a standardized, comparable product.
+- Developing robust uncertainty quantification for CH₄ and N₂O, which is not as settled as it is for CO₂.
+
+## Where the work is heading
+
+The near-term path described in 2026 is to consolidate guidance (including this public getting-started site), develop synthesis and position papers, and keep moving FLUXNET-CH₄ version 2 toward a community-wide release that new sites can join.

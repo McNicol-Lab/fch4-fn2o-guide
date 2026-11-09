@@ -1,0 +1,94 @@
+---
+title: "Network"
+subtitle: "The community behind this guide"
+toc: true
+---
+
+The FLUXNET-Coop CH₄/N₂O Data Processing Committee is a volunteer community of flux scientists working on how methane and nitrous oxide eddy-covariance data are collected, processed, and shared.
+
+This page describes the community in aggregate only. Individual names appear solely when a person who is already on the private committee contact list chooses to be listed, using the form [below](#list-my-name).
+
+::: {.icos-box}
+**Acknowledgment.** This resource is a product of discussions convened through FLUXNET-Coop and the CH₄/N₂O Data Processing Committee. We thank everyone who has contributed time, code, data, and workshop energy, including people who prefer not to be named here.
+:::
+
+## Community snapshot
+
+These approximate figures come from the committee's 2026 summary of activities. They describe the community as a whole; they are not a membership roll.
+
+::: {.stat-grid}
+::: {.stat}
+[~41]{.num}
+[people have taken part in committee activities]{.lbl}
+:::
+::: {.stat}
+[~22]{.num}
+[in North America]{.lbl}
+:::
+::: {.stat}
+[~15]{.num}
+[in Europe]{.lbl}
+:::
+::: {.stat}
+[~2]{.num}
+[in South America]{.lbl}
+:::
+::: {.stat}
+[~2]{.num}
+[in Asia and Oceania]{.lbl}
+:::
+:::
+
+The community spans career stages. Roughly, it includes about 12 professors or other senior researchers, about 10 mid-career scientists, about 10 postdoctoral or other early-career researchers, about 5 PhD students or other junior researchers, and about 4 people working in industry or other roles.
+
+## What people work on
+
+Committee work is organized around three areas, which map directly onto the sections of the [guide](guide/index.qmd):
+
+1. **[High-frequency (raw-data) preprocessing](guide/high-frequency.qmd):** instrumentation and the path from roughly 10 Hz data to 30-minute fluxes.
+2. **[Half-hourly post-processing](guide/half-hourly.qmd):** QC/QA, spike and outlier handling, u\*, gap-filling, and uncertainty.
+3. **[Ancillary variables](guide/ancillary.qmd):** the extra measurements that support interpretation, gap-filling, and comparison across sites.
+
+Shared interests that come up across these areas include processing very small or negative fluxes along the upland–wetland continuum, urban methane perspectives, and machine-learning gap-filling that can eventually align with community pipelines such as [ONEFlux](https://github.com/fluxnet/ONEFlux).
+
+## List my name {#list-my-name}
+
+If your email is already on the private committee contact list, you can ask to have your name shown on this page. Type that email and the name you would like listed, then check the box.
+
+**Your email never leaves your browser.** It is hashed (SHA-256) on your own device and compared with a list of irreversible hashes published with this site. The email itself is not uploaded and is not stored anywhere on this site.
+
+```{=html}
+<form id="optin-form" class="optin-form" autocomplete="off" novalidate>
+  <div class="mb-3">
+    <label for="optin-email" class="form-label">Email you use with the committee</label>
+    <input type="email" class="form-control" id="optin-email" name="optin-email" autocomplete="off" required>
+  </div>
+  <div class="mb-3">
+    <label for="optin-name" class="form-label">Name to display</label>
+    <input type="text" class="form-control" id="optin-name" name="optin-name" maxlength="80" autocomplete="off">
+  </div>
+  <div class="form-check mb-3">
+    <input class="form-check-input" type="checkbox" id="optin-consent">
+    <label class="form-check-label" for="optin-consent">List my name on this public page.</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Check and opt in</button>
+  <div id="optin-message" role="status" aria-live="polite"></div>
+</form>
+```
+
+If your email matches and you opt in, your display name appears right away **in this browser**. To appear for every visitor, use the button that opens a pre-filled GitHub issue; the issue contains only your display name (never your email). A maintainer then adds that name to the public list in a later site update. You can ask at any time to have a listing removed, for example by opening an issue on the [site repository](https://github.com/McNicol-Lab/fch4-fn2o-guide/issues).
+
+### People who have asked to be listed
+
+```{=html}
+<div id="optin-public">
+  <p class="small-note">Loading…</p>
+</div>
+<div id="optin-local-wrap" style="display:none">
+  <h4>Opted in (this browser)</h4>
+  <p class="small-note">Shown only on this device until a maintainer adds the name to the public list.</p>
+  <ul id="optin-local" class="name-list"></ul>
+  <button type="button" id="optin-clear" class="btn btn-sm btn-outline-secondary">Remove from this browser</button>
+</div>
+<script src="js/opt-in.js"></script>
+```

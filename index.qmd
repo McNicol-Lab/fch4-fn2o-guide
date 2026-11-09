@@ -1,0 +1,79 @@
+---
+title: "Getting started with FCH₄ and FN₂O"
+subtitle: "A short guide for adding methane and nitrous oxide to eddy-covariance workflows"
+toc: true
+---
+
+::: {.hero}
+This site is a public, getting-started package for researchers who want to add eddy-covariance **methane (FCH₄)** and **nitrous oxide (FN₂O)** fluxes to their work. It is written mainly for prospective and early-career flux scientists: graduate students, postdocs, and new principal investigators planning their first non-CO₂ flux system.
+
+It draws on materials assembled by the FLUXNET-Coop CH₄/N₂O Data Processing Committee. [Jump to the guide →](guide/index.qmd)
+:::
+
+::: {.icos-box}
+**Start with ICOS for the full protocol.** This site is a short complement to the official ICOS guidance, not a replacement for it. The ICOS Ecosystem Instructions for turbulent flux measurements of CH₄ and N₂O remain the detailed reference for instrument setup, maintenance, calibration, and ICOS data submission.
+
+- [ICOS instructions for CH₄ and N₂O eddy-covariance fluxes](https://www.europe-fluxdata.eu/icos/documents/instructions/eddych4n2o)
+- Nicolini, G., Sabbatini, S., Mammarella, I., Nemitz, E. & Papale, D. (2024). *ICOS Ecosystem Instructions for turbulent flux measurements of CH₄ and N₂O.* [doi:10.18160/61J9-4MMK](https://doi.org/10.18160/61J9-4MMK)
+:::
+
+What you will find here is shorter and more informal: why these gases behave differently from CO₂, what to think about first, which processing steps tend to matter most, which open tools people already use, and where the science is still being worked out.
+
+## Why a separate getting-started guide?
+
+Eddy-covariance methods for carbon dioxide and energy are comparatively mature. CH₄ and N₂O fluxes are different in ways that matter for processing. They are often **smaller and noisier**, and they can be **episodic**: N₂O can pulse after fertilizer and rain, and CH₄ can be released in short bursts. Those properties change how you:
+
+- detect the time lag between the gas analyzer and the sonic anemometer,
+- filter spikes and outliers without deleting real emission events,
+- decide whether a friction-velocity (u\*) threshold developed for CO₂ should be applied,
+- fill gaps in the half-hourly record, and
+- report uncertainty.
+
+New groups should not have to reconstruct that advice from scattered papers and meeting notes. This site collects the committee's public-facing guidance in one place and points you to ICOS and the literature whenever you need the full specification.
+
+## Mission
+
+The committee's mission is to provide accessible guidelines for new investigators, support the inclusive growth of the FLUXNET CH₄ and N₂O community, improve the standardization of data processing, and, over the longer term, contribute reference practices that can inform measurement, reporting, and verification (MRV) uses of these fluxes.
+
+## Four objectives
+
+1. **Better quality control.** Improve quality control and quality assurance for CH₄ and N₂O fluxes, both *before* half-hourly fluxes are computed (high-frequency, raw-data processing) and *afterward* (half-hourly QC/QA).
+2. **Open resources.** Share open resources for instrument setup and for reproducible processing.
+3. **Useful ancillary data.** Identify the ancillary measurements that most help people interpret, gap-fill, and compare CH₄ and N₂O fluxes.
+4. **Practical guidance for new PIs.** Offer best-practice guidance on site selection, systems and maintenance, ancillary measurements, high-frequency preprocessing, half-hourly post-processing, and how this work connects to global FLUXNET science.
+
+## How the guide is organized
+
+::: {.card-grid}
+::: {.area-card}
+#### [High-frequency data](guide/high-frequency.qmd)
+From the analyzer and sonic anemometer to 30-minute fluxes: time lag, despiking, spectral corrections, and quality flags.
+:::
+::: {.area-card}
+#### [Half-hourly processing](guide/half-hourly.qmd)
+QC/QA of 30-minute output, the open question of u\* filtering, gap-filling, and uncertainty.
+:::
+::: {.area-card}
+#### [Ancillary variables](guide/ancillary.qmd)
+The extra measurements that make CH₄ and N₂O time series interpretable: water, redox, soils, vegetation, and management.
+:::
+:::
+
+## How this relates to ICOS
+
+If you run or plan an ICOS station, start with the ICOS instruction and discuss site-specific choices with the ICOS Ecosystem Thematic Centre. The ICOS instruction itself builds on:
+
+- Nemitz, E., Mammarella, I., Ibrom, A., et al. (2018). Standardisation of eddy-covariance flux measurements of methane and nitrous oxide. *International Agrophysics* 32, 517–549. [doi:10.1515/intag-2017-0042](https://doi.org/10.1515/intag-2017-0042)
+- Mammarella, I., et al. (2020). *Protocol for non-CO₂ eddy covariance measurements, QA/QC, data processing and gap-filling.* RINGO H2020 Project Deliverable D3.5. Available from the [ICOS RINGO deliverables page](https://www.icos-cp.eu/impact/projects/ringo/deliverables).
+
+This site deliberately does **not** repeat ICOS rules about when CH₄ or N₂O measurements are mandatory at Class 1 stations, approved sensors, inlet geometry, calibration schedules, or file submission. It is meant to sit beside that guidance and help people getting started anywhere in the FLUXNET community.
+
+## A note on open questions
+
+::: {.open-q}
+**Not everything is settled.** Several important choices are not yet standardized for non-CO₂ fluxes. Two big ones are whether a CO₂-derived u\* threshold should be applied to FCH₄ and FN₂O, and how random, u\*, and gap-filling uncertainties should be combined when fluxes are aggregated to daily, seasonal, or annual totals. The guide says so plainly and points to current options rather than inventing a single "correct" recipe.
+:::
+
+## Acknowledgment
+
+This resource draws on the work of the FLUXNET-Coop CH₄/N₂O Data Processing Committee. We thank FLUXNET-Coop and everyone who has contributed time, code, data, and workshop energy to the committee. See the [Network](network.qmd) page for more about the community.

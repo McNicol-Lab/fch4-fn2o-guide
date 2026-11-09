@@ -1,0 +1,117 @@
+---
+title: "Half-hourly processing"
+subtitle: "Quality control, u*, gap-filling, and uncertainty for 30-minute fluxes"
+toc: true
+---
+
+## Getting started
+
+Once you have 30-minute FCH₄ or FN₂O, the post-processing chain is similar in outline to CO₂ work and different in the details. Committee discussions organized the chain this way:
+
+1. Quality-control the 30-minute output.
+2. Optionally, build the best available ancillary time series (see [Ancillary variables](ancillary.qmd)).
+3. Address u\*, gap-filling, and uncertainty.
+
+The output of EddyPro (or an equivalent raw-data processor) is typically the starting file. Many groups then finish the workflow in R, Python, or MATLAB.
+
+::: {.icos-box}
+ICOS and the RINGO D3.5 protocol (Mammarella et al., 2020; [ICOS RINGO deliverables](https://www.icos-cp.eu/impact/projects/ringo/deliverables)) describe QA/QC, u\* filtering, and gap-filling for CH₄ and N₂O in more depth. If you contribute to ICOS, follow the [ICOS instruction](https://www.europe-fluxdata.eu/icos/documents/instructions/eddych4n2o). This page is a getting-started summary.
+:::
+
+## A practical QC/QA sequence
+
+This sequence reflects common practice discussed by the committee. Thresholds are often site-specific. The goal is a **transparent, stepwise procedure**, not a single universal set of cut-offs.
+
+1. **Start from well-computed fluxes.** Use a predetermined, narrow lag-search window and a default (nominal) lag (see the [high-frequency page](high-frequency.qmd#time-lag)).
+2. **Remove only the physically impossible.** Apply a coarse minimum/maximum filter only for physically impossible outliers. There is no universal "typical range" for CH₄ or N₂O; fluxes vary from near-zero uptake to large pulses, so set any bounds for your own site.
+3. **Apply standard quality flags.** Use the Mauder and Foken (2004) / SSITC flags. Many groups retain quality classes 0 and 1.
+4. **Filter on diagnostics.** Screen for incomplete records, low signal strength, implausible flux variances, closed-path flow rate, sonic pitch, implausible time lags, and unreasonably large spectral correction factors.
+5. **Filter on wind direction** where masts, buildings, or other obstacles contaminate part of the fetch.
+6. **Propagate shared filters.** Some filters apply across traces: if a period is rejected for one reason (for example a bad flow rate), remove every flux that depends on it.
+
+## Outliers and pulses
+
+Because CH₄ and N₂O can be both very small and highly variable, it is easy to delete real events or to keep impossible spikes. Getting-started guidance from the committee:
+
+- **Iterate, semi-automatically.** Base the screening on the range you reasonably expect at your site and on the temporal character of the series: relatively steady, strongly seasonal, or pulsed.
+- **Watch the defaults.** At sites with low background fluxes plus short bursts (N₂O after fertilizer, or CH₄ ebullition), disable EddyPro's default CO₂-oriented outlier filter. That default can remove exactly the events you care about.
+- **Look at the data.** After automatic screening, inspect the time series. A stepwise procedure plus quality flags is more defensible than a single hidden threshold.
+
+Open tools people use for visualization and cleaning:
+
+- [diive](https://github.com/holukas/diive) (Python)
+- [Biomet.net](https://github.com/ubc-micromet/Biomet.net) and [Calculation_Procedures](https://github.com/ubc-micromet/Calculation_Procedures) (UBC Micromet)
+- A public wet-prairie processing workflow: [atmos-flux-data](https://github.com/ottobriner/atmos-flux-data)
+
+Useful papers: Vitale et al. (2020), *Biogeosciences*, on a robust data-cleaning procedure for eddy-covariance fluxes ([doi:10.5194/bg-17-1367-2020](https://doi.org/10.5194/bg-17-1367-2020)); Langford et al. (2015), *AMT* ([doi:10.5194/amt-8-4197-2015](https://doi.org/10.5194/amt-8-4197-2015)).
+
+## Friction velocity (u\*)
+
+::: {.open-q}
+**Open question.** Whether a u\* threshold developed from CO₂ (NEE) should be applied to FCH₄ and FN₂O is not settled. Applying the CO₂-derived threshold is one option used in the community, but it is not established as correct for these gases.
+:::
+
+A useful analogy comes from FLUXNET carbon and energy processing, where sensible and latent heat fluxes are not u\*-filtered in the same way as NEE (Pastorello et al., 2020, *Scientific Data*, [doi:10.1038/s41597-020-0534-3](https://doi.org/10.1038/s41597-020-0534-3)). CH₄ and N₂O may behave more like those energy fluxes at some sites and more like CO₂ at others.
+
+What to do for now:
+
+- If you apply a u\* filter, say so, show how the threshold was chosen, and consider reporting a sensitivity test.
+- If you do not apply one, say that too.
+
+## Gap-filling
+
+Gap-filling here means **imputing missing values in a single site-level time series**. It is not interpolation in the casual sense, not forecasting, and not spatial upscaling.
+
+Getting-started points from committee discussions:
+
+- **Machine-learning ensembles** are the current direction for community CH₄ products. Random forests and XGBoost are often sufficient; more elaborate architectures are not automatically better.
+- **Community direction.** The committee has committed to machine-learning gap-filling for FLUXNET-CH₄ version 2.0, with longer-term interest in aligning with [ONEFlux](https://github.com/fluxnet/ONEFlux).
+- **Realistic validation.** Use cross-validation that inserts artificial gaps similar in length and timing to the gaps you actually have, not only random point-wise holdouts.
+- **Time predictors matter.** At most sites, generic temporal predictors help: day of year or season encoded as sine and cosine terms, and other smooth temporal markers.
+- **Pick metrics carefully.** Choose error metrics that respect both short-term pulses and longer-term totals. A method that matches the mean but smears out events may look good on one score and poor on another.
+- **Calibrated uncertainty.** The uncertainty of filled values can be calibrated (for example with Platt scaling). Whether that calibrated error should replace a separately estimated random uncertainty is still being discussed.
+
+**About MDS.** Marginal distribution sampling (MDS), as widely used for CO₂, is not automatically the best default for CH₄ or N₂O, especially when fluxes are pulsed or gaps are long. If you use MDS, document why.
+
+Public tools and papers:
+
+- [fluxgapfill](https://pypi.org/project/fluxgapfill/) — Irvin et al. (2021), *Agricultural and Forest Meteorology* 308–309, 108528, [doi:10.1016/j.agrformet.2021.108528](https://doi.org/10.1016/j.agrformet.2021.108528)
+- [methane-gapfill-ml](https://github.com/stanfordmlgroup/methane-gapfill-ml)
+- Kim et al. (2020), *Global Change Biology*, on gap-filling approaches for eddy-covariance CH₄ fluxes, [doi:10.1111/gcb.14845](https://doi.org/10.1111/gcb.14845)
+- Moffat et al. (2007), *Agricultural and Forest Meteorology*, a classic comparison of CO₂ gap-filling methods and useful background, [doi:10.1016/j.agrformet.2007.08.011](https://doi.org/10.1016/j.agrformet.2007.08.011)
+
+## Uncertainty
+
+For CO₂, community tools such as REddyProc already separate several uncertainty terms and show how to aggregate them (see the [REddyProc aggregated-uncertainty vignette](https://github.com/bgctw/REddyProc/blob/master/vignettes/aggUncertainty.md) and the [MPI-BGC FAQ](https://www.bgc-jena.mpg.de/5629512/FAQ)).
+
+For CH₄ and N₂O, the same ingredients are discussed, but they are **not yet standardized**:
+
+- Random measurement uncertainty, including serial correlation (Hollinger and Richardson, 2005, *Tree Physiology*, [doi:10.1093/treephys/25.7.873](https://doi.org/10.1093/treephys/25.7.873)).
+- Uncertainty from the choice of u\* threshold, if a threshold is applied.
+- Uncertainty from gap-filling, for example the spread across models or across gap-filling runs.
+- How those terms combine when you report a daily, seasonal, or annual total.
+- How to combine CO₂, CH₄, and N₂O when someone wants a net greenhouse-gas budget. Adding variances is only valid if the errors are independent, so do not treat that as automatic.
+
+A transparent first step is to **report each term you can estimate** and to say clearly which terms you could not yet quantify. There is no single official non-CO₂ uncertainty recipe yet.
+
+## Remaining questions
+
+::: {.open-q}
+**Still being worked out:**
+
+- Are CO₂-style random-uncertainty estimators the best available for CH₄ and N₂O?
+- Is gap-filling uncertainty partly already contained in the spread across u\* scenarios, or should it be estimated separately?
+- How should very long gaps (for example, longer than about three months, which MDS often will not fill) be handled?
+- How should uncertainties be communicated when people later compute net greenhouse-gas budgets?
+:::
+
+## A short half-hourly checklist
+
+- [ ] Write down every filter and threshold you apply, in order.
+- [ ] Turn off CO₂-tuned defaults (such as EddyPro's default outlier filter) at pulsed sites, and say so.
+- [ ] Inspect the screened time series by eye before gap-filling.
+- [ ] State whether you applied a u\* filter, and how the threshold was chosen.
+- [ ] Validate gap-filling with realistic artificial gaps.
+- [ ] Report each uncertainty term you can estimate, and name the ones you could not.
+
+**Next:** [Ancillary variables →](ancillary.qmd)
