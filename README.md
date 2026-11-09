@@ -44,8 +44,9 @@ quarto render                      # writes _site/
 git add -A && git commit -m "Update content" && git push origin main
 
 # 3. Publish the rendered site to gh-pages
-rm -rf /tmp/ghp && git worktree add /tmp/ghp gh-pages
-rsync -a --delete --exclude .git _site/ /tmp/ghp/
+rm -rf /tmp/ghp && git fetch origin gh-pages && git worktree add /tmp/ghp gh-pages
+find /tmp/ghp -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+cp -a _site/. /tmp/ghp/
 touch /tmp/ghp/.nojekyll
 cd /tmp/ghp && git add -A && git commit -m "Publish site" && git push origin gh-pages
 cd - && git worktree remove /tmp/ghp
