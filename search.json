@@ -1,0 +1,338 @@
+[
+  {
+    "objectID": "guide/ancillary.html",
+    "href": "guide/ancillary.html",
+    "title": "Ancillary variables",
+    "section": "",
+    "text": "Fluxes rarely explain themselves. CH₄ production, oxidation, and transport, and N₂O production and consumption, depend on water, oxygen (or redox state), temperature, substrate, vegetation, and, very often, human management. Ancillary measurements are also the predictors you will need for gap-filling and for comparing sites.\n\nThis page is a getting-started priority list distilled from committee discussions, including a working inventory of variables. It is not a mandatory protocol and not a substitute for ICOS or FLUXNET BADM metadata requirements. If you submit to a network, follow that network’s variable list (for ICOS, see the CH₄/N₂O instruction and the ICOS instructions for meteorological measurements, doi:10.18160/NHEG-4KWW). If you are just starting, measure the high-priority, feasible items for your ecosystem first.\n\nThe working inventory uses four priority levels:\n\nImportant and usually feasible\nImportant, but sometimes difficult\nUseful wishlist, usually feasible\nUseful wishlist, difficult\n\nItems below are priority 1 unless marked otherwise."
+  },
+  {
+    "objectID": "guide/ancillary.html#getting-started",
+    "href": "guide/ancillary.html#getting-started",
+    "title": "Ancillary variables",
+    "section": "",
+    "text": "Fluxes rarely explain themselves. CH₄ production, oxidation, and transport, and N₂O production and consumption, depend on water, oxygen (or redox state), temperature, substrate, vegetation, and, very often, human management. Ancillary measurements are also the predictors you will need for gap-filling and for comparing sites.\n\nThis page is a getting-started priority list distilled from committee discussions, including a working inventory of variables. It is not a mandatory protocol and not a substitute for ICOS or FLUXNET BADM metadata requirements. If you submit to a network, follow that network’s variable list (for ICOS, see the CH₄/N₂O instruction and the ICOS instructions for meteorological measurements, doi:10.18160/NHEG-4KWW). If you are just starting, measure the high-priority, feasible items for your ecosystem first.\n\nThe working inventory uses four priority levels:\n\nImportant and usually feasible\nImportant, but sometimes difficult\nUseful wishlist, usually feasible\nUseful wishlist, difficult\n\nItems below are priority 1 unless marked otherwise."
+  },
+  {
+    "objectID": "guide/ancillary.html#ch₄-a-strong-starting-set",
+    "href": "guide/ancillary.html#ch₄-a-strong-starting-set",
+    "title": "Ancillary variables",
+    "section": "CH₄: a strong starting set",
+    "text": "CH₄: a strong starting set\n\nMeteorology and footprint\n\nWind speed and wind direction (needed for the flux itself and to interpret the footprint)\nAir pressure (influences gas release from soils)\nPrecipitation (related to wetness and water-table dynamics)\n\n\n\nSoil and water\n\nSoil temperature at several depths, and in the main landscape types inside the footprint\nSoil moisture, ideally as a profile and in more than one patch type (TDR or similar)\nRedox state, or another redox index (priority 2: important, often harder)\nWater-table elevation above or below the ground surface (priority 2; manual wells or a calibrated pressure transducer)\nWater or profile temperature\nDissolved oxygen in soil or porewater, where it can be measured\n\n\n\nVegetation and carbon inputs\n\nEcosystem type\nVegetation density, especially plants with aerenchyma (priority 2). Aerenchymatous plants can vent CH₄ past oxidizing layers; some mosses and floating plants can instead favor oxidation.\nPlant growth forms (rooting depth, height, LAI)\nCover of plants, open soil, and open water, including patchiness and the length of plant–water edges (aerial imagery or classification helps)\nGross primary production and the CO₂ flux, which help describe carbon supply to methanogens\n\n\n\nMore static site descriptors\nOften priority 3, but still worth collecting:\n\nSoil texture\nSoil carbon and nitrogen content"
+  },
+  {
+    "objectID": "guide/ancillary.html#ch₄-extras-that-depend-on-the-ecosystem",
+    "href": "guide/ancillary.html#ch₄-extras-that-depend-on-the-ecosystem",
+    "title": "Ancillary variables",
+    "section": "CH₄: extras that depend on the ecosystem",
+    "text": "CH₄: extras that depend on the ecosystem\nMarshes and tidal systems\n\nSalinity (often essential where sulfate reduction competes with methanogenesis)\nTides and water-height variation; lateral carbon transport can be a large term\n\nPeatlands\n\nDrainage and rewetting\nHow much of the surface is ponded or affected by drainage (moisture topography)\n\nAgricultural footprints\n\nManure type and amount, and how it is stored\nAnimal density and location in the footprint (enteric CH₄ as well as manure)\nAnimal diet, where it is known"
+  },
+  {
+    "objectID": "guide/ancillary.html#n₂o-a-strong-starting-set",
+    "href": "guide/ancillary.html#n₂o-a-strong-starting-set",
+    "title": "Ancillary variables",
+    "section": "N₂O: a strong starting set",
+    "text": "N₂O: a strong starting set\nN₂O work is especially common in agriculture, but low-nutrient and peatland sites matter too.\n\nEnvironment\n\nAir temperature, soil temperature, and soil moisture\nPrecipitation (often the trigger for emission pulses)\nAlbedo and snow cover or snow depth, when freeze–thaw emissions are possible\n\n\n\nSoil nitrogen and physical properties\n\nSoil nitrate (for example, KCl extracts) and ammonium\nSoil type and organic-matter content, C:N ratio, bulk density, and texture\n\n\n\nManagement\nWrite these down even if you cannot measure them with sensors at high frequency.\n\nFertilizer type and formulation, including inhibitors (product names can hide formula changes)\nTotal nitrogen applied, and total ammoniacal nitrogen if the source is manure\nFertilization date, and the gap between fertilization and the next wetting event\nPlanting date, crop or plant type (including legumes), tillage, and application method\nIrrigation timing\nHarvest yields and plant nitrogen content, which help close an agronomic nitrogen budget\n\n\n\nOther settings\n\nIn low-nutrient (oligotrophic) systems, regional ammonia concentrations or nitrogen deposition can matter even without fertilizer\nPeatland drainage and land-use history\nDissolved oxygen in soil"
+  },
+  {
+    "objectID": "guide/ancillary.html#how-to-use-this-list",
+    "href": "guide/ancillary.html#how-to-use-this-list",
+    "title": "Ancillary variables",
+    "section": "How to use this list",
+    "text": "How to use this list\n\nStart with what you can sustain. A water-table record and a soil temperature and moisture profile will help almost any CH₄ site; fertilizer timing and soil moisture will help almost any agricultural N₂O site.\nMatch spatial sampling to the flux footprint. One point sensor in a heterogeneous marsh can mislead you.\nKeep management as metadata, even when it is not a continuous sensor stream.\nLook at metadata templates early. If your goals include carbon accounting or comparison with other FLUXNET sites, review the network’s BADM / metadata templates early so you do not have to reconstruct a season after the fact."
+  },
+  {
+    "objectID": "guide/ancillary.html#what-comes-next",
+    "href": "guide/ancillary.html#what-comes-next",
+    "title": "Ancillary variables",
+    "section": "What comes next",
+    "text": "What comes next\nThe ancillary-variables group has discussed a future white paper aimed at people entering CH₄ and N₂O eddy covariance. It would focus on terrestrial systems (agriculture, forests, tropics, peatlands, and other wet soils) and on the possible use of satellite products alongside tower data. Accompanying CO₂ fluxes are also useful for modeling. Until that paper exists, treat this page as a concise starting list rather than a final standard.\nBack to: Guide overview"
+  },
+  {
+    "objectID": "guide/high-frequency.html",
+    "href": "guide/high-frequency.html",
+    "title": "High-frequency data collection and processing",
+    "section": "",
+    "text": "High-frequency processing is everything that turns raw sonic-anemometer and gas-analyzer records into a 30-minute flux. The building blocks you may know from CO₂ still apply: coordinate rotation, time-lag correction, detrending or high-pass filtering, air-density (WPL) terms where needed, spectral corrections, and quality flags. CH₄ and N₂O change the emphasis because the signal is often weaker and more intermittent.\n\nFor the full system-setup specification (sensors, inlet geometry, calibration, maintenance), see the ICOS CH₄/N₂O instruction and Nemitz et al. (2018). Raw-data processing for CO₂ and energy fluxes is covered in Sabbatini et al. (2018), doi:10.1515/intag-2017-0043. This page covers the issues that most often surprise people new to non-CO₂ fluxes."
+  },
+  {
+    "objectID": "guide/high-frequency.html#getting-started",
+    "href": "guide/high-frequency.html#getting-started",
+    "title": "High-frequency data collection and processing",
+    "section": "",
+    "text": "High-frequency processing is everything that turns raw sonic-anemometer and gas-analyzer records into a 30-minute flux. The building blocks you may know from CO₂ still apply: coordinate rotation, time-lag correction, detrending or high-pass filtering, air-density (WPL) terms where needed, spectral corrections, and quality flags. CH₄ and N₂O change the emphasis because the signal is often weaker and more intermittent.\n\nFor the full system-setup specification (sensors, inlet geometry, calibration, maintenance), see the ICOS CH₄/N₂O instruction and Nemitz et al. (2018). Raw-data processing for CO₂ and energy fluxes is covered in Sabbatini et al. (2018), doi:10.1515/intag-2017-0043. This page covers the issues that most often surprise people new to non-CO₂ fluxes."
+  },
+  {
+    "objectID": "guide/high-frequency.html#instruments-and-setup",
+    "href": "guide/high-frequency.html#instruments-and-setup",
+    "title": "High-frequency data collection and processing",
+    "section": "Instruments and setup",
+    "text": "Instruments and setup\nThese are complementary notes, not a sensor list.\n\nClosed-path laser spectrometers are widely used for both CH₄ and N₂O. Pay attention to tube length, flow rate, and how you will find the time lag relative to the sonic anemometer.\nOpen-path CH₄ analyzers (including the LI-COR LI-7700) involve a well-known trade-off: open-path systems need larger air-density corrections, while closed-path systems can lose high-frequency signal in the tube under some conditions. See Detto et al. (2011), Agricultural and Forest Meteorology, doi:10.1016/j.agrformet.2011.05.014.\nNetwork rules come first. As a matter of ICOS network policy, ICOS no longer accepts the LI-7700 at ICOS Class 1 ecosystem stations. If you are part of ICOS, follow ICOS. If you are not, treat instrument choice as a scientific and practical decision, follow your own network’s rules, and document your reasoning. This site does not ban any commercial sensor.\nRecord what you will need later: gas mole fractions, the three wind components, sonic temperature, and the diagnostics your analyzer provides (signal strength, flow, cell or mirror status, and so on)."
+  },
+  {
+    "objectID": "guide/high-frequency.html#time-lag",
+    "href": "guide/high-frequency.html#time-lag",
+    "title": "High-frequency data collection and processing",
+    "section": "Time lag",
+    "text": "Time lag\nFor closed-path systems, detecting the time delay between the sonic anemometer and the analyzer is one of the most important high-frequency steps, especially when fluxes are small. When the signal-to-noise ratio is low, a lag search over a wide window tends to lock onto noise and can bias fluxes. Langford et al. (2015), Atmospheric Measurement Techniques, doi:10.5194/amt-8-4197-2015, is a good introduction to time-lag determination and detection limits for low signal-to-noise eddy-covariance data.\nPoints emphasized in committee discussions:\n\nDetect time lags carefully for closed-path laser spectrometers.\nUse a predetermined, relatively narrow lag-search window together with a default (nominal) lag, rather than letting the search wander over a wide window at every interval.\nHigh-pass filtered lag correction, as implemented in eddy4R, is one documented approach."
+  },
+  {
+    "objectID": "guide/high-frequency.html#wavelets-and-data-retention",
+    "href": "guide/high-frequency.html#wavelets-and-data-retention",
+    "title": "High-frequency data collection and processing",
+    "section": "Wavelets and data retention",
+    "text": "Wavelets and data retention\nConventional stationarity and turbulence flags can remove a large fraction of CH₄ or N₂O records at sites where fluxes arrive in short events. Wavelet-based methods are being used in this community to retain more high-quality data and to identify disruptive events, without treating every non-stationary period as unusable. Think of wavelets as a promising and actively used approach, not a required standard."
+  },
+  {
+    "objectID": "guide/high-frequency.html#despiking-spectral-corrections-and-quality-flags",
+    "href": "guide/high-frequency.html#despiking-spectral-corrections-and-quality-flags",
+    "title": "High-frequency data collection and processing",
+    "section": "Despiking, spectral corrections, and quality flags",
+    "text": "Despiking, spectral corrections, and quality flags\n\nDespiking. Remove physically impossible spikes in the raw data before averaging, but be careful not to treat real emission pulses (ebullition, fertilizer bursts) as noise.\nSpectral corrections. These can become large when tubes, filters, or analyzers attenuate high frequencies. Intervals with extreme correction factors are often filtered later, at the half-hourly stage.\nQuality flags. Standard flux quality flags, such as the Mauder and Foken (2004) scheme based on steady-state and integral-turbulence-characteristics (SSITC) tests, are still commonly applied. Many groups keep quality classes 0 and 1 for quantitative work."
+  },
+  {
+    "objectID": "guide/high-frequency.html#software-people-use-at-this-stage",
+    "href": "guide/high-frequency.html#software-people-use-at-this-stage",
+    "title": "High-frequency data collection and processing",
+    "section": "Software people use at this stage",
+    "text": "Software people use at this stage\nEddyPro (LI-COR; the processing engine is open source) is the processing software most widely used in this community to compute 30-minute fluxes from raw files. Other groups use in-house MATLAB, R, or Python code, or research pipelines such as eddy4R.\nWhatever you choose, write down your settings: the lag window and nominal lag, the despiking method, the spectral corrections, and whether a default CO₂-style outlier filter was left on."
+  },
+  {
+    "objectID": "guide/high-frequency.html#a-short-high-frequency-checklist",
+    "href": "guide/high-frequency.html#a-short-high-frequency-checklist",
+    "title": "High-frequency data collection and processing",
+    "section": "A short high-frequency checklist",
+    "text": "A short high-frequency checklist\n\nConfirm clock synchronization between the sonic anemometer and the gas analyzer (see ICOS for recommended practice).\nFor closed-path systems, document the inlet position relative to the sonic anemometer, the tube length, and the flow rate.\nSet a physically plausible lag-search window and a nominal lag.\nInspect lag detections on days with clear fluxes and on days with near-zero fluxes.\nReview raw-data diagnostics (signal strength, flow, analyzer warnings) before you trust a long automated run.\nRecord software versions and processing settings so the 30-minute product is reproducible.\n\nNext: Half-hourly processing →"
+  },
+  {
+    "objectID": "work.html",
+    "href": "work.html",
+    "title": "Work",
+    "section": "",
+    "text": "The committee has been working since 2024 to turn scattered CH₄ and N₂O processing practice into shared guidance, open tools, and, over time, updates to community datasets such as FLUXNET-CH₄."
+  },
+  {
+    "objectID": "work.html#three-work-areas",
+    "href": "work.html#three-work-areas",
+    "title": "Work",
+    "section": "Three work areas",
+    "text": "Three work areas\nThe work is organized into three structured areas, each with its own page in the guide:\n\nHigh-frequency preprocessing of raw eddy-covariance data, including time-lag handling and methods that can retain more high-quality records.\nHalf-hourly post-processing: quality control of 30-minute fluxes, the still-open question of u* filtering for CH₄ and N₂O, gap-filling, and uncertainty.\nAncillary variables, launched after a full-committee discussion in September 2024, to identify which extra measurements most help people interpret and gap-fill non-CO₂ fluxes.\n\nA longer-term goal is alignment with ONEFlux, the community processing pipeline used for FLUXNET carbon and energy products. For FLUXNET-CH₄ version 2.0, the group has committed to machine-learning approaches to gap-filling."
+  },
+  {
+    "objectID": "work.html#timeline",
+    "href": "work.html#timeline",
+    "title": "Work",
+    "section": "Timeline",
+    "text": "Timeline\n\n\nApril 2024 Committee work is underway, and the four objectives are in place.\n\n\nSeptember 2024 A full-committee discussion launches the ancillary-variables work area.\n\n\n21–23 October 2024 FLUXNET-CH₄ v2.0 Data Processing Workshop in Berkeley, held as a hybrid meeting with more than 100 participants.\n\n\n2024–2025 Groups share high-frequency processing approaches, including wavelet methods and time-lag correction, and work on machine-learning gap-filling pipelines.\n\n\nJuly 2025 Updates presented at the FLUXNET Workshop in Brisbane.\n\n\nNovember 2025 Status update in the FLUXNET Community Council newsletter.\n\n\n2026 A Volkswagen Foundation workshop in Hannover on advancing data processing, including scoping toward a community position paper.\n\n\nApril 2026 Status: continue finalizing best-practice guidance, synthesize ancillary-variable recommendations, support new sites, and connect this work to the broader FLUXNET Data System Initiative (whose public data-system release was noted as December 2025)."
+  },
+  {
+    "objectID": "work.html#workshops",
+    "href": "work.html#workshops",
+    "title": "Work",
+    "section": "Workshops",
+    "text": "Workshops\n\nFLUXNET-CH₄ v2.0 Data Processing Workshop, Berkeley, 21–23 October 2024 (hybrid; more than 100 participants).\nFLUXNET Workshop, Brisbane, 2025.\nVolkswagen Foundation workshop on advancing data processing, Hannover, 2026."
+  },
+  {
+    "objectID": "work.html#scientific-progress",
+    "href": "work.html#scientific-progress",
+    "title": "Work",
+    "section": "Scientific progress",
+    "text": "Scientific progress\nProgress so far is real but still developing. In brief:\n\nHigh-frequency preprocessing. Wavelet approaches can retain records that conventional stationarity or turbulence flags would otherwise discard. There has also been work on time-lag detection for closed-path laser analyzers, including high-pass filtered lag correction as implemented in tools such as eddy4R.\nMachine-learning gap-filling. Pipelines are being integrated for community use. Results were still preliminary at the time of the 2026 summary, so no performance numbers are reported here.\nLow and negative fluxes. An active discussion addresses how to handle small and negative fluxes, which matter for upland sites and for the upland–wetland continuum, not only for large wetland sources."
+  },
+  {
+    "objectID": "work.html#open-challenges",
+    "href": "work.html#open-challenges",
+    "title": "Work",
+    "section": "Open challenges",
+    "text": "Open challenges\nThe committee has been candid about what is hard:\n\nCoordinating a global volunteer group across many time zones.\nBalancing new methods against the need for a standardized, comparable product.\nDeveloping robust uncertainty quantification for CH₄ and N₂O, which is not as settled as it is for CO₂."
+  },
+  {
+    "objectID": "work.html#where-the-work-is-heading",
+    "href": "work.html#where-the-work-is-heading",
+    "title": "Work",
+    "section": "Where the work is heading",
+    "text": "Where the work is heading\nThe near-term path described in 2026 is to consolidate guidance (including this public getting-started site), develop synthesis and position papers, and keep moving FLUXNET-CH₄ version 2 toward a community-wide release that new sites can join."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Getting started with FCH₄ and FN₂O",
+    "section": "",
+    "text": "This site is a public, getting-started package for researchers who want to add eddy-covariance methane (FCH₄) and nitrous oxide (FN₂O) fluxes to their work. It is written mainly for prospective and early-career flux scientists: graduate students, postdocs, and new principal investigators planning their first non-CO₂ flux system.\nIt draws on materials assembled by the FLUXNET-Coop CH₄/N₂O Data Processing Committee. Jump to the guide →\nWhat you will find here is shorter and more informal: why these gases behave differently from CO₂, what to think about first, which processing steps tend to matter most, which open tools people already use, and where the science is still being worked out."
+  },
+  {
+    "objectID": "index.html#why-a-separate-getting-started-guide",
+    "href": "index.html#why-a-separate-getting-started-guide",
+    "title": "Getting started with FCH₄ and FN₂O",
+    "section": "Why a separate getting-started guide?",
+    "text": "Why a separate getting-started guide?\nEddy-covariance methods for carbon dioxide and energy are comparatively mature. CH₄ and N₂O fluxes are different in ways that matter for processing. They are often smaller and noisier, and they can be episodic: N₂O can pulse after fertilizer and rain, and CH₄ can be released in short bursts. Those properties change how you:\n\ndetect the time lag between the gas analyzer and the sonic anemometer,\nfilter spikes and outliers without deleting real emission events,\ndecide whether a friction-velocity (u*) threshold developed for CO₂ should be applied,\nfill gaps in the half-hourly record, and\nreport uncertainty.\n\nNew groups should not have to reconstruct that advice from scattered papers and meeting notes. This site collects the committee’s public-facing guidance in one place and points you to ICOS and the literature whenever you need the full specification."
+  },
+  {
+    "objectID": "index.html#mission",
+    "href": "index.html#mission",
+    "title": "Getting started with FCH₄ and FN₂O",
+    "section": "Mission",
+    "text": "Mission\nThe committee’s mission is to provide accessible guidelines for new investigators, support the inclusive growth of the FLUXNET CH₄ and N₂O community, improve the standardization of data processing, and, over the longer term, contribute reference practices that can inform measurement, reporting, and verification (MRV) uses of these fluxes."
+  },
+  {
+    "objectID": "index.html#four-objectives",
+    "href": "index.html#four-objectives",
+    "title": "Getting started with FCH₄ and FN₂O",
+    "section": "Four objectives",
+    "text": "Four objectives\n\nBetter quality control. Improve quality control and quality assurance for CH₄ and N₂O fluxes, both before half-hourly fluxes are computed (high-frequency, raw-data processing) and afterward (half-hourly QC/QA).\nOpen resources. Share open resources for instrument setup and for reproducible processing.\nUseful ancillary data. Identify the ancillary measurements that most help people interpret, gap-fill, and compare CH₄ and N₂O fluxes.\nPractical guidance for new PIs. Offer best-practice guidance on site selection, systems and maintenance, ancillary measurements, high-frequency preprocessing, half-hourly post-processing, and how this work connects to global FLUXNET science."
+  },
+  {
+    "objectID": "index.html#how-the-guide-is-organized",
+    "href": "index.html#how-the-guide-is-organized",
+    "title": "Getting started with FCH₄ and FN₂O",
+    "section": "How the guide is organized",
+    "text": "How the guide is organized\n\n\nHigh-frequency data\nFrom the analyzer and sonic anemometer to 30-minute fluxes: time lag, despiking, spectral corrections, and quality flags.\n\n\nHalf-hourly processing\nQC/QA of 30-minute output, the open question of u* filtering, gap-filling, and uncertainty.\n\n\nAncillary variables\nThe extra measurements that make CH₄ and N₂O time series interpretable: water, redox, soils, vegetation, and management."
+  },
+  {
+    "objectID": "index.html#how-this-relates-to-icos",
+    "href": "index.html#how-this-relates-to-icos",
+    "title": "Getting started with FCH₄ and FN₂O",
+    "section": "How this relates to ICOS",
+    "text": "How this relates to ICOS\nIf you run or plan an ICOS station, start with the ICOS instruction and discuss site-specific choices with the ICOS Ecosystem Thematic Centre. The ICOS instruction itself builds on:\n\nNemitz, E., Mammarella, I., Ibrom, A., et al. (2018). Standardisation of eddy-covariance flux measurements of methane and nitrous oxide. International Agrophysics 32, 517–549. doi:10.1515/intag-2017-0042\nMammarella, I., et al. (2020). Protocol for non-CO₂ eddy covariance measurements, QA/QC, data processing and gap-filling. RINGO H2020 Project Deliverable D3.5. Available from the ICOS RINGO deliverables page.\n\nThis site deliberately does not repeat ICOS rules about when CH₄ or N₂O measurements are mandatory at Class 1 stations, approved sensors, inlet geometry, calibration schedules, or file submission. It is meant to sit beside that guidance and help people getting started anywhere in the FLUXNET community."
+  },
+  {
+    "objectID": "index.html#a-note-on-open-questions",
+    "href": "index.html#a-note-on-open-questions",
+    "title": "Getting started with FCH₄ and FN₂O",
+    "section": "A note on open questions",
+    "text": "A note on open questions\n\nNot everything is settled. Several important choices are not yet standardized for non-CO₂ fluxes. Two big ones are whether a CO₂-derived u* threshold should be applied to FCH₄ and FN₂O, and how random, u*, and gap-filling uncertainties should be combined when fluxes are aggregated to daily, seasonal, or annual totals. The guide says so plainly and points to current options rather than inventing a single “correct” recipe."
+  },
+  {
+    "objectID": "index.html#acknowledgment",
+    "href": "index.html#acknowledgment",
+    "title": "Getting started with FCH₄ and FN₂O",
+    "section": "Acknowledgment",
+    "text": "Acknowledgment\nThis resource draws on the work of the FLUXNET-Coop CH₄/N₂O Data Processing Committee. We thank FLUXNET-Coop and everyone who has contributed time, code, data, and workshop energy to the committee. See the Network page for more about the community."
+  },
+  {
+    "objectID": "network.html",
+    "href": "network.html",
+    "title": "Network",
+    "section": "",
+    "text": "The FLUXNET-Coop CH₄/N₂O Data Processing Committee is a volunteer community of flux scientists working on how methane and nitrous oxide eddy-covariance data are collected, processed, and shared.\nThis page describes the community in aggregate only. Individual names appear solely when a person who is already on the private committee contact list chooses to be listed, using the form below."
+  },
+  {
+    "objectID": "network.html#community-snapshot",
+    "href": "network.html#community-snapshot",
+    "title": "Network",
+    "section": "Community snapshot",
+    "text": "Community snapshot\nThese approximate figures come from the committee’s 2026 summary of activities. They describe the community as a whole; they are not a membership roll.\n\n\n~41 people have taken part in committee activities\n\n\n~22 in North America\n\n\n~15 in Europe\n\n\n~2 in South America\n\n\n~2 in Asia and Oceania\n\n\nThe community spans career stages. Roughly, it includes about 12 professors or other senior researchers, about 10 mid-career scientists, about 10 postdoctoral or other early-career researchers, about 5 PhD students or other junior researchers, and about 4 people working in industry or other roles."
+  },
+  {
+    "objectID": "network.html#what-people-work-on",
+    "href": "network.html#what-people-work-on",
+    "title": "Network",
+    "section": "What people work on",
+    "text": "What people work on\nCommittee work is organized around three areas, which map directly onto the sections of the guide:\n\nHigh-frequency (raw-data) preprocessing: instrumentation and the path from roughly 10 Hz data to 30-minute fluxes.\nHalf-hourly post-processing: QC/QA, spike and outlier handling, u*, gap-filling, and uncertainty.\nAncillary variables: the extra measurements that support interpretation, gap-filling, and comparison across sites.\n\nShared interests that come up across these areas include processing very small or negative fluxes along the upland–wetland continuum, urban methane perspectives, and machine-learning gap-filling that can eventually align with community pipelines such as ONEFlux."
+  },
+  {
+    "objectID": "network.html#list-my-name",
+    "href": "network.html#list-my-name",
+    "title": "Network",
+    "section": "List my name",
+    "text": "List my name\nIf your email is already on the private committee contact list, you can ask to have your name shown on this page. Type that email and the name you would like listed, then check the box.\nYour email never leaves your browser. It is hashed (SHA-256) on your own device and compared with a list of irreversible hashes published with this site. The email itself is not uploaded and is not stored anywhere on this site.\n\n  \n    Email you use with the committee\n    \n  \n  \n    Name to display\n    \n  \n  \n    \n    List my name on this public page.\n  \n  Check and opt in\n  \n\nIf your email matches and you opt in, your display name appears right away in this browser. To appear for every visitor, use the button that opens a pre-filled GitHub issue; the issue contains only your display name (never your email). A maintainer then adds that name to the public list in a later site update. You can ask at any time to have a listing removed, for example by opening an issue on the site repository.\n\nPeople who have asked to be listed\n\n  Loading…\n\n\n  Opted in (this browser)\n  Shown only on this device until a maintainer adds the name to the public list.\n  \n  Remove from this browser"
+  },
+  {
+    "objectID": "guide/index.html",
+    "href": "guide/index.html",
+    "title": "Guide overview",
+    "section": "",
+    "text": "This guide complements ICOS; it does not replace it. For installation geometry, approved sensors, maintenance, calibration, and ICOS file submission, use the official documents:\n\nICOS instructions for CH₄ and N₂O turbulent fluxes — Nicolini et al. (2024), doi:10.18160/61J9-4MMK\nNemitz et al. (2018), International Agrophysics, doi:10.1515/intag-2017-0042\nMammarella et al. (2020), RINGO Deliverable D3.5 (ICOS RINGO deliverables)"
+  },
+  {
+    "objectID": "guide/index.html#the-typical-path",
+    "href": "guide/index.html#the-typical-path",
+    "title": "Guide overview",
+    "section": "The typical path",
+    "text": "The typical path\nA typical path from a new CH₄ or N₂O analyzer to an annual budget looks like this:\n\nPlan the site and system. Choose a site and an instrument setup appropriate to the flux size you expect, and follow your network’s hardware rules (for ICOS stations, that means the ICOS instruction).\nCollect high-frequency data. Record synchronized wind and gas data, commonly at 10 Hz.\nCompute fluxes. Calculate 30-minute (or 60-minute) fluxes, taking particular care with time lag, despiking, and spectral corrections.\nQuality-control the half-hourly fluxes. Do not blindly reuse every default that was tuned for CO₂.\nDecide on u*. Decide, transparently, what you will do about low-turbulence (low u*) periods. This is still an active discussion for CH₄ and N₂O.\nGap-fill. Fill gaps in the series. Here that means imputing missing values in one site’s time series, not spatial upscaling.\nReport uncertainty and collect ancillary data. Estimate and report uncertainty, and collect the ancillary measurements you will need to interpret and gap-fill the fluxes."
+  },
+  {
+    "objectID": "guide/index.html#where-each-step-lives-in-this-guide",
+    "href": "guide/index.html#where-each-step-lives-in-this-guide",
+    "title": "Guide overview",
+    "section": "Where each step lives in this guide",
+    "text": "Where each step lives in this guide\n\n\nHigh-frequency data collection and processing\nSteps 1–3. Instruments, time lag, wavelets, despiking, spectral corrections, and software.\n\n\nHalf-hourly processing\nSteps 4–7. QC/QA, outliers and pulses, u*, gap-filling, and uncertainty.\n\n\nAncillary variables\nStep 7 and beyond. What to measure alongside the fluxes, for CH₄ and for N₂O."
+  },
+  {
+    "objectID": "guide/index.html#why-ch₄-and-n₂o-need-extra-care",
+    "href": "guide/index.html#why-ch₄-and-n₂o-need-extra-care",
+    "title": "Guide overview",
+    "section": "Why CH₄ and N₂O need extra care",
+    "text": "Why CH₄ and N₂O need extra care\nCompared with CO₂, CH₄ and N₂O fluxes are often smaller relative to instrument noise and more episodic. The same building blocks apply, but the emphasis shifts:\n\nLow signal-to-noise makes time-lag detection and the limit of detection more important.\nBursts and pulses (CH₄ ebullition, N₂O after fertilizer and rain) can be mistaken for spikes or non-stationarity and filtered out.\nu* filtering and uncertainty do not yet have community-standard answers for these gases.\nDrivers differ. Water, redox, substrate, vegetation, and management often matter more than light and temperature alone, which shapes both interpretation and gap-filling."
+  },
+  {
+    "objectID": "guide/index.html#how-to-use-this-guide",
+    "href": "guide/index.html#how-to-use-this-guide",
+    "title": "Guide overview",
+    "section": "How to use this guide",
+    "text": "How to use this guide\nRead the pages in order if you are planning a new system, or jump to the page for the step you are working on. Each page ends with a short checklist or a list of open questions. Wherever this guide is brief, follow the links to ICOS and the literature for the full detail."
+  },
+  {
+    "objectID": "guide/half-hourly.html",
+    "href": "guide/half-hourly.html",
+    "title": "Half-hourly processing",
+    "section": "",
+    "text": "Once you have 30-minute FCH₄ or FN₂O, the post-processing chain is similar in outline to CO₂ work and different in the details. Committee discussions organized the chain this way:\n\nQuality-control the 30-minute output.\nOptionally, build the best available ancillary time series (see Ancillary variables).\nAddress u*, gap-filling, and uncertainty.\n\nThe output of EddyPro (or an equivalent raw-data processor) is typically the starting file. Many groups then finish the workflow in R, Python, or MATLAB.\n\nICOS and the RINGO D3.5 protocol (Mammarella et al., 2020; ICOS RINGO deliverables) describe QA/QC, u* filtering, and gap-filling for CH₄ and N₂O in more depth. If you contribute to ICOS, follow the ICOS instruction. This page is a getting-started summary."
+  },
+  {
+    "objectID": "guide/half-hourly.html#getting-started",
+    "href": "guide/half-hourly.html#getting-started",
+    "title": "Half-hourly processing",
+    "section": "",
+    "text": "Once you have 30-minute FCH₄ or FN₂O, the post-processing chain is similar in outline to CO₂ work and different in the details. Committee discussions organized the chain this way:\n\nQuality-control the 30-minute output.\nOptionally, build the best available ancillary time series (see Ancillary variables).\nAddress u*, gap-filling, and uncertainty.\n\nThe output of EddyPro (or an equivalent raw-data processor) is typically the starting file. Many groups then finish the workflow in R, Python, or MATLAB.\n\nICOS and the RINGO D3.5 protocol (Mammarella et al., 2020; ICOS RINGO deliverables) describe QA/QC, u* filtering, and gap-filling for CH₄ and N₂O in more depth. If you contribute to ICOS, follow the ICOS instruction. This page is a getting-started summary."
+  },
+  {
+    "objectID": "guide/half-hourly.html#a-practical-qcqa-sequence",
+    "href": "guide/half-hourly.html#a-practical-qcqa-sequence",
+    "title": "Half-hourly processing",
+    "section": "A practical QC/QA sequence",
+    "text": "A practical QC/QA sequence\nThis sequence reflects common practice discussed by the committee. Thresholds are often site-specific. The goal is a transparent, stepwise procedure, not a single universal set of cut-offs.\n\nStart from well-computed fluxes. Use a predetermined, narrow lag-search window and a default (nominal) lag (see the high-frequency page).\nRemove only the physically impossible. Apply a coarse minimum/maximum filter only for physically impossible outliers. There is no universal “typical range” for CH₄ or N₂O; fluxes vary from near-zero uptake to large pulses, so set any bounds for your own site.\nApply standard quality flags. Use the Mauder and Foken (2004) / SSITC flags. Many groups retain quality classes 0 and 1.\nFilter on diagnostics. Screen for incomplete records, low signal strength, implausible flux variances, closed-path flow rate, sonic pitch, implausible time lags, and unreasonably large spectral correction factors.\nFilter on wind direction where masts, buildings, or other obstacles contaminate part of the fetch.\nPropagate shared filters. Some filters apply across traces: if a period is rejected for one reason (for example a bad flow rate), remove every flux that depends on it."
+  },
+  {
+    "objectID": "guide/half-hourly.html#outliers-and-pulses",
+    "href": "guide/half-hourly.html#outliers-and-pulses",
+    "title": "Half-hourly processing",
+    "section": "Outliers and pulses",
+    "text": "Outliers and pulses\nBecause CH₄ and N₂O can be both very small and highly variable, it is easy to delete real events or to keep impossible spikes. Getting-started guidance from the committee:\n\nIterate, semi-automatically. Base the screening on the range you reasonably expect at your site and on the temporal character of the series: relatively steady, strongly seasonal, or pulsed.\nWatch the defaults. At sites with low background fluxes plus short bursts (N₂O after fertilizer, or CH₄ ebullition), disable EddyPro’s default CO₂-oriented outlier filter. That default can remove exactly the events you care about.\nLook at the data. After automatic screening, inspect the time series. A stepwise procedure plus quality flags is more defensible than a single hidden threshold.\n\nOpen tools people use for visualization and cleaning:\n\ndiive (Python)\nBiomet.net and Calculation_Procedures (UBC Micromet)\nA public wet-prairie processing workflow: atmos-flux-data\n\nUseful papers: Vitale et al. (2020), Biogeosciences, on a robust data-cleaning procedure for eddy-covariance fluxes (doi:10.5194/bg-17-1367-2020); Langford et al. (2015), AMT (doi:10.5194/amt-8-4197-2015)."
+  },
+  {
+    "objectID": "guide/half-hourly.html#friction-velocity-u",
+    "href": "guide/half-hourly.html#friction-velocity-u",
+    "title": "Half-hourly processing",
+    "section": "Friction velocity (u*)",
+    "text": "Friction velocity (u*)\n\nOpen question. Whether a u* threshold developed from CO₂ (NEE) should be applied to FCH₄ and FN₂O is not settled. Applying the CO₂-derived threshold is one option used in the community, but it is not established as correct for these gases.\n\nA useful analogy comes from FLUXNET carbon and energy processing, where sensible and latent heat fluxes are not u*-filtered in the same way as NEE (Pastorello et al., 2020, Scientific Data, doi:10.1038/s41597-020-0534-3). CH₄ and N₂O may behave more like those energy fluxes at some sites and more like CO₂ at others.\nWhat to do for now:\n\nIf you apply a u* filter, say so, show how the threshold was chosen, and consider reporting a sensitivity test.\nIf you do not apply one, say that too."
+  },
+  {
+    "objectID": "guide/half-hourly.html#gap-filling",
+    "href": "guide/half-hourly.html#gap-filling",
+    "title": "Half-hourly processing",
+    "section": "Gap-filling",
+    "text": "Gap-filling\nGap-filling here means imputing missing values in a single site-level time series. It is not interpolation in the casual sense, not forecasting, and not spatial upscaling.\nGetting-started points from committee discussions:\n\nMachine-learning ensembles are the current direction for community CH₄ products. Random forests and XGBoost are often sufficient; more elaborate architectures are not automatically better.\nCommunity direction. The committee has committed to machine-learning gap-filling for FLUXNET-CH₄ version 2.0, with longer-term interest in aligning with ONEFlux.\nRealistic validation. Use cross-validation that inserts artificial gaps similar in length and timing to the gaps you actually have, not only random point-wise holdouts.\nTime predictors matter. At most sites, generic temporal predictors help: day of year or season encoded as sine and cosine terms, and other smooth temporal markers.\nPick metrics carefully. Choose error metrics that respect both short-term pulses and longer-term totals. A method that matches the mean but smears out events may look good on one score and poor on another.\nCalibrated uncertainty. The uncertainty of filled values can be calibrated (for example with Platt scaling). Whether that calibrated error should replace a separately estimated random uncertainty is still being discussed.\n\nAbout MDS. Marginal distribution sampling (MDS), as widely used for CO₂, is not automatically the best default for CH₄ or N₂O, especially when fluxes are pulsed or gaps are long. If you use MDS, document why.\nPublic tools and papers:\n\nfluxgapfill — Irvin et al. (2021), Agricultural and Forest Meteorology 308–309, 108528, doi:10.1016/j.agrformet.2021.108528\nmethane-gapfill-ml\nKim et al. (2020), Global Change Biology, on gap-filling approaches for eddy-covariance CH₄ fluxes, doi:10.1111/gcb.14845\nMoffat et al. (2007), Agricultural and Forest Meteorology, a classic comparison of CO₂ gap-filling methods and useful background, doi:10.1016/j.agrformet.2007.08.011"
+  },
+  {
+    "objectID": "guide/half-hourly.html#uncertainty",
+    "href": "guide/half-hourly.html#uncertainty",
+    "title": "Half-hourly processing",
+    "section": "Uncertainty",
+    "text": "Uncertainty\nFor CO₂, community tools such as REddyProc already separate several uncertainty terms and show how to aggregate them (see the REddyProc aggregated-uncertainty vignette and the MPI-BGC FAQ).\nFor CH₄ and N₂O, the same ingredients are discussed, but they are not yet standardized:\n\nRandom measurement uncertainty, including serial correlation (Hollinger and Richardson, 2005, Tree Physiology, doi:10.1093/treephys/25.7.873).\nUncertainty from the choice of u* threshold, if a threshold is applied.\nUncertainty from gap-filling, for example the spread across models or across gap-filling runs.\nHow those terms combine when you report a daily, seasonal, or annual total.\nHow to combine CO₂, CH₄, and N₂O when someone wants a net greenhouse-gas budget. Adding variances is only valid if the errors are independent, so do not treat that as automatic.\n\nA transparent first step is to report each term you can estimate and to say clearly which terms you could not yet quantify. There is no single official non-CO₂ uncertainty recipe yet."
+  },
+  {
+    "objectID": "guide/half-hourly.html#remaining-questions",
+    "href": "guide/half-hourly.html#remaining-questions",
+    "title": "Half-hourly processing",
+    "section": "Remaining questions",
+    "text": "Remaining questions\n\nStill being worked out:\n\nAre CO₂-style random-uncertainty estimators the best available for CH₄ and N₂O?\nIs gap-filling uncertainty partly already contained in the spread across u* scenarios, or should it be estimated separately?\nHow should very long gaps (for example, longer than about three months, which MDS often will not fill) be handled?\nHow should uncertainties be communicated when people later compute net greenhouse-gas budgets?"
+  },
+  {
+    "objectID": "guide/half-hourly.html#a-short-half-hourly-checklist",
+    "href": "guide/half-hourly.html#a-short-half-hourly-checklist",
+    "title": "Half-hourly processing",
+    "section": "A short half-hourly checklist",
+    "text": "A short half-hourly checklist\n\nWrite down every filter and threshold you apply, in order.\nTurn off CO₂-tuned defaults (such as EddyPro’s default outlier filter) at pulsed sites, and say so.\nInspect the screened time series by eye before gap-filling.\nState whether you applied a u* filter, and how the threshold was chosen.\nValidate gap-filling with realistic artificial gaps.\nReport each uncertainty term you can estimate, and name the ones you could not.\n\nNext: Ancillary variables →"
+  }
+]
