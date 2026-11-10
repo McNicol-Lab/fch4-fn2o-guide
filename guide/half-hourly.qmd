@@ -43,7 +43,7 @@ Open tools people use for visualization and cleaning:
 - [Biomet.net](https://github.com/ubc-micromet/Biomet.net) and [Calculation_Procedures](https://github.com/ubc-micromet/Calculation_Procedures) (UBC Micromet)
 - A public wet-prairie processing workflow: [atmos-flux-data](https://github.com/ottobriner/atmos-flux-data)
 
-Useful papers: Vitale et al. (2020), *Biogeosciences*, on a robust data-cleaning procedure for eddy-covariance fluxes ([doi:10.5194/bg-17-1367-2020](https://doi.org/10.5194/bg-17-1367-2020)); Langford et al. (2015), *AMT* ([doi:10.5194/amt-8-4197-2015](https://doi.org/10.5194/amt-8-4197-2015)).
+Useful papers: Vitale et al. (2020), *Biogeosciences*, on a robust data-cleaning procedure for eddy-covariance fluxes ([doi:10.5194/bg-17-1367-2020](https://doi.org/10.5194/bg-17-1367-2020)); Langford et al. (2015), *AMT* ([doi:10.5194/amt-8-4197-2015](https://doi.org/10.5194/amt-8-4197-2015)); Thomas et al. (2011), *Biogeosciences* 8, 1595–1613, which discusses spike detection for CO₂ and energy fluxes in detail ([doi:10.5194/bg-8-1595-2011](https://doi.org/10.5194/bg-8-1595-2011)).
 
 ## Friction velocity (u\*)
 
@@ -79,6 +79,7 @@ Public tools and papers:
 - [methane-gapfill-ml](https://github.com/stanfordmlgroup/methane-gapfill-ml)
 - Kim et al. (2020), *Global Change Biology*, on gap-filling approaches for eddy-covariance CH₄ fluxes, [doi:10.1111/gcb.14845](https://doi.org/10.1111/gcb.14845)
 - Moffat et al. (2007), *Agricultural and Forest Meteorology*, a classic comparison of CO₂ gap-filling methods and useful background, [doi:10.1016/j.agrformet.2007.08.011](https://doi.org/10.1016/j.agrformet.2007.08.011)
+- Dengel et al. (2013), *Biogeosciences* 10, 8185–8200, which extended neural-network gap-filling to CH₄ fluxes from high-latitude wetlands, [doi:10.5194/bg-10-8185-2013](https://doi.org/10.5194/bg-10-8185-2013)
 
 ## Uncertainty
 

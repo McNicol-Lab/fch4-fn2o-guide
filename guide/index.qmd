@@ -12,6 +12,8 @@ toc: true
 - Mammarella et al. (2020), RINGO Deliverable D3.5 ([ICOS RINGO deliverables](https://www.icos-cp.eu/impact/projects/ringo/deliverables))
 :::
 
+*Forthcoming: paper from the 2026 Volkswagen Foundation workshop (Hannover). Citation and link will be added when available.*
+
 ## The typical path
 
 A typical path from a new CH₄ or N₂O analyzer to an annual budget looks like this:

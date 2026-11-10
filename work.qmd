@@ -58,6 +58,7 @@ Status: continue finalizing best-practice guidance, synthesize ancillary-variabl
 - **FLUXNET-CH₄ v2.0 Data Processing Workshop**, Berkeley, 21–23 October 2024 (hybrid; more than 100 participants).
 - **FLUXNET Workshop**, Brisbane, 2025.
 - **Volkswagen Foundation workshop on advancing data processing**, Hannover, 2026.
+    - *Forthcoming: paper from the 2026 Volkswagen Foundation workshop (Hannover). Citation and link will be added when available.*
 
 ## Scientific progress
 
