@@ -25,6 +25,8 @@ Items below are priority 1 unless marked otherwise.
 
 ### Meteorology and footprint
 
+- Incoming shortwave radiation
+- Air temperature
 - Wind speed and wind direction (needed for the flux itself and to interpret the footprint)
 - Air pressure (influences gas release from soils)
 - Precipitation (related to wetness and water-table dynamics)
@@ -77,6 +79,7 @@ N₂O work is especially common in agriculture, but low-nutrient and peatland si
 
 ### Environment
 
+- Incoming shortwave radiation
 - Air temperature, soil temperature, and soil moisture
 - Precipitation (often the trigger for emission pulses)
 - Albedo and snow cover or snow depth, when freeze–thaw emissions are possible
